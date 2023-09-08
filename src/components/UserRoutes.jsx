@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import { lazy } from "react";
-import Layout from "./Layout/Layout";
+import { Layout } from "./Layout/Layout";
 const HomePage = lazy(() => import("../pages/HomePage"));
 const CatalogPage = lazy(() => import("../pages/CatalogPage"));
 const FavoritesPage = lazy(() => import("../pages/FavoritesPage"));
 
-const UserRoutes = () => {
+export const UserRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -17,5 +17,3 @@ const UserRoutes = () => {
     </Routes>
   );
 };
-
-export default UserRoutes;

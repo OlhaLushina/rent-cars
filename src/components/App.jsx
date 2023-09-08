@@ -1,7 +1,7 @@
-import GlobalStyle from "./GlobalStyle";
-import UserRoutes from "./UserRoutes";
+import { GlobalStyle } from "./GlobalStyle";
+import { UserRoutes } from "./UserRoutes";
 
-const App = () => {
+export const App = () => {
   return (
     <>
       <GlobalStyle />
@@ -9,5 +9,3 @@ const App = () => {
     </>
   );
 };
-
-export default App;
